@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If this educational prototype supports your work, please cite it as below."
+title: "Vision-Guided Surveillance Rover"
+type: software
+authors:
+  - family-names: Sharma
+    given-names: Sahil
+repository-code: "https://github.com/sahilsharma20/Remote-Controlled-Surveillance-Vehicle"
+version: 1.0.0
+date-released: 2026-07-11
+license: MIT
+keywords:
+  - computer vision
+  - robotics
+  - MediaPipe
+  - Arduino

@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vision-guided-surveillance-rover"
+version = "1.0.0"
+description = "MediaPipe and Arduino based real-time human tracking robotics prototype"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Sahil Sharma" }]
+keywords = [
+  "computer-vision",
+  "robotics",
+  "mediapipe",
+  "opencv",
+  "arduino",
+  "pose-estimation",
+]
+dependencies = [
+  "mediapipe>=0.10",
+  "numpy>=1.24",
+  "opencv-python>=4.8",
+  "pyserial>=3.5",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.5"]
+
+[project.scripts]
+surveillance-vehicle = "surveillance_vehicle.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
