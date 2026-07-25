@@ -1,3 +1,7 @@
+<p align="center">
+<img src="https://raw.githubusercontent.com/sahilsharma20/github-assets/main/surveillance-banner.png" width="100%">
+</p>
+
 <div align="center">
 
 # Vision-Guided Surveillance Rover
